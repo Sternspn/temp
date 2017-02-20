@@ -1,0 +1,410 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+}
+
+.top-line, .bottom-line {
+	width: 100%;
+	min-width: 1200px;
+	height: 228px;
+	background-color: #004E9A;
+}
+
+.top-line {
+	position: absolute;
+	top: 0;
+}
+
+.page {
+	max-width: 1300px;
+	min-width: 1200px;
+	min-height: 480px;
+	margin: 0 auto;
+	background-color: #FFF;
+	top: 77px;
+	position: relative;
+	box-shadow: 0 0 45px 0px rgba(0,0,0,0.25);
+	margin-bottom: -65px;
+}
+
+.white-winds {
+	width: 55px;
+	height: 87%;
+	position: absolute;
+	top: 228px;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,1) 40px, rgba(255,255,255,1) 94%, rgba(255,255,255,0.1));
+}
+
+.left {
+	left: -45px;
+}
+
+.right {
+	right: -45px;
+}
+
+.content {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	color: #666;
+	font-size: 14px;
+}
+
+h1 {
+	font-size: 2em;
+	padding-top: 110px;
+	color: #2b2a29;
+	border-bottom: 2px solid #2b2a29;
+}
+
+h2 {
+	font-size: 2em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #2b2a29;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: large;
+	color: rgb(0, 53, 98);
+	margin-top: 33px;
+	margin-bottom: 33px;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table td, table th {
+	border: 1px solid #ccc;
+	width: 50%;
+}
+
+table th {
+	color: rgb(0, 53, 98);
+	font-size: 100%;
+	padding: 18px 0; 
+}
+
+table td {
+	font-size: 12px;
+	color: rgb(39, 38, 38);
+	height: 200px
+}
+
+table td:first-child {
+	text-align: center;
+}
+
+table td:first-child span {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgb(122, 0, 38);
+	margin-bottom: 10px;
+}
+
+.big {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.blue-block {
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	background: #86BFFF;
+	border-radius: 12px;
+	margin-right: 15px;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 12px;
+}
+
+.blue-block:last-child {
+	margin-right: 0;
+}
+
+table td:last-child p {
+	font-size: 14px;
+	vertical-align: top;
+	margin: 5px; 
+	display: inline-block;
+	font-weight: bold;
+}
+
+table td:last-child p span:first-child {
+	color: rgb(121, 0, 0);
+}
+
+table td:last-child p span:last-child {
+	font-weight: normal;
+	color: #8C8C8C;
+}
+
+table b {
+	color: rgb(121, 0, 0);
+}
+
+.blue-btn {
+	border-radius: 3px;
+	color: #FFF;
+	background: #4950DD;
+	box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.41);
+	text-shadow: -1px -1px 1px #666666;
+	padding: 2px 5px;
+	cursor: pointer; 
+	margin-top: 4px;
+	margin-right: 10px;
+	float: right;
+	font-size: 14px;
+}
+
+.update1c p:last-child {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.top10 p {
+	width: 80%;
+	display: inline-block;
+	margin-bottom: 13px; 
+}
+
+.top10 .right-price {
+	float: right;
+}
+
+.top10 .blue-btn {
+	margin-top: -2px;
+}
+
+.calculation form {
+	width: 100%;
+	height: 310px;
+	background: #86BFFF;
+	border-radius: 50px;
+	position: relative;
+	box-shadow: 0 10px 20px 2px #71B3FF;
+}
+
+.calculation p {
+	font-weight: bold;
+    font-size: 16px;
+    color: rgb(39, 38, 38);
+    margin: 27px 80px;
+    display: inline-block;
+}
+
+.calculation p:first-child {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.calculation label {
+	margin: 0 190px;
+	color: rgb(39, 38, 38);
+	cursor: pointer;
+	display: inline-block;
+}
+
+.calculation input[type=checkbox] {
+	display: none;
+}
+
+.calculation label::before {
+	content: "";
+	display: inline-block;
+    margin: -1px 20px 0 -25px;
+    cursor: pointer;
+	border-radius: 3px;
+	width: 17px;
+	height: 17px;
+	background: linear-gradient(to bottom, rgba(247,189,81,1), rgba(247,150,33,1));
+	position: absolute;
+}
+
+.calculation #checkbox1:checked + label::before, .calculation #checkbox2:checked + label::before {
+    content: "\2713";
+    color: black;
+    text-align: center;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+.calculation select {
+	margin-left: -35px;
+}
+
+.calculation .button {
+	cursor: pointer;
+	border-radius: 6px;
+	width: 250px;
+	height: 60px;
+	background: linear-gradient(to bottom, rgba(247,189,81,1), rgba(247,150,33,1));
+	margin: 20px auto;
+	text-align: center;
+	color: rgb(39, 38, 38);
+	font-weight: bold;
+	text-transform: uppercase;
+    font-size: 16px;
+    line-height: 3.5;
+    box-shadow: 0 2px 5px #666666;
+}
+
+.guarantee h3 {
+	margin-top: 43px;
+}
+
+.guarantee ul li{
+	list-style-image: url(marker.png);
+	margin-bottom: 10px;
+}
+
+.guarantee p {
+	color: rgb(122, 0, 38);
+	font-weight: bold;
+	font-size: 16px;
+	margin: 23px 0;
+}
+
+.guarantee span {
+	font-style: italic; 
+}
+
+.infographics {
+	width: 130px;
+	height: 220px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-right: 8%;
+}
+
+.info1 {
+	background: url(1.jpg) no-repeat;
+}
+
+.info2 {
+	background: url(2.jpg) no-repeat;
+}
+
+.info3 {
+	background: url(3.jpg) no-repeat;
+}
+
+.info4 {
+	background: url(4.png) no-repeat;
+	margin-right: 0;
+}
+
+.infographics p {
+	position: relative;
+	top: 150px;
+	color: rgb(39, 38, 38);
+	font-weight: bold;
+}
+
+#last {
+	text-align: center;
+}
+
+#last span {
+	font-weight: bold;
+}
+
+.buy, .join {
+	cursor: pointer;
+	border-radius: 6px;
+	background: linear-gradient(to bottom, rgba(247,189,81,1), rgba(247,150,33,1));
+	margin: 20px auto;
+	text-align: center;
+	color: rgb(39, 38, 38);
+	font-weight: bold;
+	box-shadow: 0 2px 5px #666666;
+}
+
+.buy {
+	width: 250px;
+	height: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+    font-size: 18px;
+    line-height: 3.5;
+}
+
+.join {
+	width: 250px;
+	height: 60px;
+	font-weight: bold;
+	font-size: 18px;
+    line-height: 3.5;
+}
+
+.last-block p {
+	text-align: center;
+	font-size: 16px;
+    line-height: 3;
+    color: rgb(39, 38, 38);
+}
+
+.last-block .bold {
+	font-weight: bold;
+}
+
+.last-block .bold span {
+	font-size: 20px;
+}
+
+.last-block h3 {
+	margin-top: 53px;
+}
+
+.feedback {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ccc;
+	margin: 25px auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+@media all and (max-width: 1410px) {
+	.left {
+		left: -25px;
+	}
+
+	.right {
+		right: -25px;
+	}
+
+	.page {
+		box-shadow: 0 0 25px 0px rgba(0,0,0,0.25);
+	}
+
+}
+
+@media all and (max-width: 1370px) {
+	.white-winds {
+		display: none;
+	}
+
+	.page {
+		box-shadow: none;
+	}
+
+}
