@@ -12,9 +12,9 @@ h1, h2, h3, h4, p {
 
 .top-line, .bottom-line {
 	width: 100%;
-	min-width: 1200px;
 	height: 228px;
 	background-color: #004E9A;
+	min-width: 780px;
 }
 
 .top-line {
@@ -23,8 +23,8 @@ h1, h2, h3, h4, p {
 }
 
 .page {
+	min-width: 780px;
 	max-width: 1300px;
-	min-width: 1200px;
 	min-height: 480px;
 	margin: 0 auto;
 	background-color: #FFF;
@@ -179,7 +179,7 @@ table b {
 	margin-top: 10px;
 }
 
-.top10 p {
+/*.top10 p {
 	width: 80%;
 	display: inline-block;
 	margin-bottom: 13px; 
@@ -191,6 +191,34 @@ table b {
 
 .top10 .blue-btn {
 	margin-top: -2px;
+}*/
+
+.top10 table {
+	width: 85%;
+}
+
+.top10 tr td, .top10 tr th {
+	height: 25px;
+	font-size: 14px;
+}
+
+.top10 tr td:first-child {
+	text-align: left;
+	width: 75%;
+}
+
+.top10 tr td:last-child {
+	text-align: right;
+}
+
+.buttons {
+	width: 100px;
+	float: right;
+	margin-top: 59px;
+}
+
+.buttons .blue-btn {
+	margin-top: 8px;
 }
 
 .calculation form {
@@ -271,7 +299,7 @@ table b {
 }
 
 .guarantee ul li{
-	list-style-image: url(marker.png);
+	list-style-image: url(images/marker.png);
 	margin-bottom: 10px;
 }
 
@@ -296,19 +324,19 @@ table b {
 }
 
 .info1 {
-	background: url(1.jpg) no-repeat;
+	background: url(images/1.jpg) no-repeat;
 }
 
 .info2 {
-	background: url(2.jpg) no-repeat;
+	background: url(images/2.jpg) no-repeat;
 }
 
 .info3 {
-	background: url(3.jpg) no-repeat;
+	background: url(images/3.jpg) no-repeat;
 }
 
 .info4 {
-	background: url(4.png) no-repeat;
+	background: url(images/4.png) no-repeat;
 	margin-right: 0;
 }
 
@@ -405,6 +433,38 @@ table b {
 
 	.page {
 		box-shadow: none;
+	}
+
+	.content p {
+		font-size: 13px;
+	}
+
+}
+
+@media all and (max-width: 1200px) {
+	.content {
+		width: 65%;
+	}
+
+}
+
+@media all and (max-width: 1110px) {
+	.content {
+		width: 70%;
+	}
+
+}
+
+@media all and (max-width: 1110px) {
+	.content {
+		width: 75%;
+	}
+
+}
+
+@media all and (max-width: 965px) {
+	.content {
+		width: 92%;
 	}
 
 }

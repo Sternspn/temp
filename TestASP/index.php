@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Test-ASP</title>
@@ -41,16 +41,19 @@
 			</div>
 			<div class="top10">
 				<h3>Топ 10 обновляемых справочников</h3>
-				<p>Справочник «Организации» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Банки» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Банковские счета» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Валюты» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Контрагенты» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Тип цен номенклатуры» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Склады (места хранения)» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Подразделения» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Физические  лица» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
-				<p>Справочник «Сотрудники организации» <span class='right-price'>от <b>1200</b> р.</span></p><div class="blue-btn">заказать</div>
+				<div class="buttons">
+					<!-- <p>Справочник «Организации» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Банки» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Банковские счета» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Валюты» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Контрагенты» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Тип цен номенклатуры» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Склады (места хранения)» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Подразделения» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Физические  лица» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+					<!-- <p>Справочник «Сотрудники организации» <span class='right-price'>от <b>1200</b> р.</span></p> --><div class="blue-btn">заказать</div>
+				</div>
+				<?php include_once "include.php"; ?>
 			</div>
 			<div class="calculation">
 				<h3>Заказать расчёт стоимости обновления 1С</h3>
