@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Elgrow</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic' rel='stylesheet' type='text/css'>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDoBRl5u9b4EyeU_QXSvtxO6bYwvwuJ6c">
+	</script>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+</head>
+<body>
+	<div class="background hidden_slider">
+	<div class="shadow"></div>
+		<div class="top-line">
+			<div class='left'>
+				<div class="feedback" onclick="Feedback()">обратная связь</div>
+				<div class="phone">+7 343 302 14 88</div>
+				<a href="#" class="lang">ru<div class="pick-line"></div></a>
+				<a href="#" class="lang">en<div class="pick-line"></div></a>
+			</div>
+			<div class='right'>
+				<a href="#" class="right-menu" onclick="Show_slider()">услуги<div class="pick-line"></div></a>
+				<a href="portfolio.html" class="right-menu">портфолио<div class="pick-line"></div></a>
+				<a href="contacts.html" class="right-menu">контакты<div class="pick-line"></div></a>
+				<div class='second-logo' onclick="location.href = 'index1.html'">elgrow</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="exit-btn1"><div class="center-point"><div class="center-point_inner"></div></div></div>
+		<div class="slider">
+			<div class='slide'><a href="#"><img src="images/Slide1.png" alt="1"></a><p>01<br>стартапы и веб-сервисы</p></div>
+			<div class='slide'><a href="#"><img src="images/Slide2.png" alt="2"></a><p>02<br>комплексный интернет-маркетинг</p></div>
+			<div class='slide'><a href="#"><img src="images/Slide3.png" alt="3"></a><p>03<br>системная интеграция и корпоративное по</p></div>
+			<div class='slide'><a href="#"><img src="images/Slide4.png" alt="4"></a><p>04<br>стартапы и веб-сервисы</p></div>
+			<div class='slide'><a href="#"><img src="images/Slide5.png" alt="5"></a><p>05<br>комплексный интернет-маркетинг</p></div>
+			<div class='slide'><a href="#"><img src="images/Slide6.png" alt="6"></a><p>06<br>системная интеграция и корпоративное по</p></div>
+		</div>
+		<div class="center-point"><div class="center-point_inner">.</div></div>
+		<div class="contacts-description">
+			<p class = 'head'>адрес</p>
+			<p>г.Екатеринбург, ул. Ленина 50б, офис 526</p>
+			<p class = 'head'>телефон</p>
+			<p>+7 343 302 14 88</p>
+			<p class = 'head'>e-mail</p>
+			<p>info@elgrow.ru</p>
+			<div class="send learn_more" onclick="Feedback()"><p>Написать нам</p></div>
+		</div>
+		<div class="social">
+			<a href="http://www.vk.com" class="social_vk soc"><img src="images/vk_icon.png" alt="vk"><p>Вконтакте</p></a>
+			<a href="http://www.facebook.com" class="social_fb soc"><img src="images/fb_icon.png" alt="fb"><p>Facebook</p></a>
+			<a href="http://www.instagram.com" class="social_inst soc"><img src="images/inst_icon.png" alt="inst"><p>Instagram</p></a>
+			<a href="http://www.linkedin.com" class="social_link soc"><img src="images/link_icon.png" alt="link"><p>Linkedin</p></a>
+		</div>
+	</div>
+	<div id="map_canvas"></div>
+
+	<div class="modalback"></div>
+	<div class="modalform">
+		<div class="exit-btn"><div class="center-point"><div class="center-point_inner"></div></div></div>
+		<form>
+			<div class="string">
+				<p>Связаться с нами</p>
+				<input type="text">
+				<div class="next">далее <span>&#8594;</span></div>
+			</div>
+			<div class="name-form understring" id='black'>имя<div class="dote"></div></div>
+			<div class="phone-form understring">телефон<div class="dote"></div></div>
+			<div class="email-form understring">e-mail<div class="dote"></div></div>
+			<div class="text-form understring">текст</div>
+		</form>
+	</div>
+
+		<script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="other/script.js" type="text/javascript">
+	</script>
+	<script>
+		(function() {
+			$(document).ready(function() {
+
+				var fenway = {lat: 56.83883236, lng: 60.62390104};
+				var map = new google.maps.Map(document.getElementById('map_canvas'), {
+					center: fenway,
+					zoom: 14
+				});
+				var panorama = new google.maps.StreetViewPanorama(
+					document.getElementById('map_canvas'), {
+						position: fenway,
+						pov: {
+							heading: -22,
+							pitch: -2
+						}
+					});
+				map.setStreetView(panorama);
+			});
+		})();
+	</script>
+</body>
+</html>
